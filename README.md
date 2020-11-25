@@ -1,4 +1,4 @@
-# portfolio-vue3
+# portfolio on Vue3
 
 ## Project setup
 ```
