@@ -19,9 +19,6 @@ export default class App extends Vue {}
 </script>
 
 <style lang="scss">
-:root {
-  --text-color-h: #ffeade;
-}
 body {
   background-color: #fedcc8;
   margin: 0;
@@ -34,6 +31,11 @@ body {
   h1,
   h2 {
     color: var(--text-color-h);
+  }
+
+  hr {
+    width: 60%;
+    border-color: #ca293e;
   }
 }
 

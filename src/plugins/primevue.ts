@@ -1,4 +1,5 @@
-import 'primevue/resources/themes/vela-purple/theme.css'
+import '@/assets/theme.css'
+// import 'primevue/resources/themes/vela-purple/theme.css'
 
 import 'primevue/resources/primevue.min.css'
 import 'primeicons/primeicons.css'
