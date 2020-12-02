@@ -18,7 +18,7 @@ div.parallax(:class="{disabled: isDisable}")
     div.image
 
   Avatar
-  div.content()
+  div.content
     div.center
       slot
 </template>
@@ -35,6 +35,7 @@ import Avatar from '@/components/Avatar.vue'
 export default class Parallax extends Vue {
   public isDisable = false
 
+  // TODO: Add directive scroll like the first version
   public handleScroll(evt: any, el: HTMLElement): void {
     const scrollTop: number = evt.currentTarget.scrollTop
     const topElement: number = el.offsetTop + 50
@@ -132,6 +133,7 @@ export default class Parallax extends Vue {
     .center {
       max-width: 650px;
       margin: 0 auto;
+      padding: 10px;
     }
   }
 

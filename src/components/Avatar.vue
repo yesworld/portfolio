@@ -1,8 +1,8 @@
 <template lang="pug">
-div#avatar.p-grid.p-flex-column.p-jc-center.p-ai-center
-  img(v-if="data.avatar" :src="data.avatar" alt="photo yesworld")
-  h1 {{data.h1}}
-  h2 {{data.title}}
+div#avatar.p-flex-column.p-jc-center.p-ai-center
+  img(:src="data.avatar" alt="photo yesworld" width=150 height=150)
+  h1.p-text-center {{data.h1}}
+  h2.p-text-center {{data.title}}
 </template>
 
 <script lang="ts">
@@ -23,7 +23,8 @@ export default class Avatar extends Vue {
   align-items: center;
   height: 100%;
   position: relative;
-  color: var(--text-color-h);
+  display: flex;
+  flex-wrap: wrap;
 
   > h1,
   h2 {
@@ -36,7 +37,6 @@ export default class Avatar extends Vue {
 
   > img {
     border-radius: 100%;
-    width: 150px;
   }
 }
 </style>

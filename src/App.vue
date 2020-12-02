@@ -1,6 +1,6 @@
 <template lang="pug">
 Parallax
-  #nav
+  nav
     router-link(to="/") Home |
     router-link(to="/about") About
   router-view
@@ -26,16 +26,19 @@ body {
   background-color: #fedcc8;
   margin: 0;
   padding: 0;
-}
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: var(--font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  color: var(--text-color);
+
+  h1,
+  h2 {
+    color: var(--text-color-h);
+  }
 }
 
-#nav {
+nav {
+  display: none;
   padding: 30px;
 
   a {
