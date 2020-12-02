@@ -17,6 +17,7 @@ div.parallax(:class="{disabled: isDisable}")
   div.layer.l_6
     div.image
 
+  Avatar
   div.content()
     div.center
       slot
@@ -24,9 +25,12 @@ div.parallax(:class="{disabled: isDisable}")
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component'
+import Avatar from '@/components/Avatar.vue'
 
 @Options({
-  components: {},
+  components: {
+    Avatar,
+  },
 })
 export default class Parallax extends Vue {
   public isDisable = false
@@ -34,7 +38,7 @@ export default class Parallax extends Vue {
   public handleScroll(evt: any, el: HTMLElement): void {
     const scrollTop: number = evt.currentTarget.scrollTop
     const topElement: number = el.offsetTop + 50
-    this.isDisable = scrollTop > topElement ? true : false
+    this.isDisable = scrollTop > topElement
     this.$emit('show-menu', this.isDisable)
   }
 }
