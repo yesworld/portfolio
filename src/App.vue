@@ -1,12 +1,29 @@
-<template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view />
+<template lang="pug">
+Parallax
+  #nav
+    router-link(to="/") Home |
+    router-link(to="/about") About
+  router-view
 </template>
 
+<script lang="ts">
+import { Options, Vue } from 'vue-class-component'
+import Parallax from '@/components/Parallax.vue'
+
+@Options({
+  components: {
+    Parallax,
+  },
+})
+export default class App extends Vue {}
+</script>
+
 <style lang="scss">
+body {
+  background-color: #fedcc8;
+  margin: 0;
+  padding: 0;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
