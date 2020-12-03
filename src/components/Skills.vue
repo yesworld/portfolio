@@ -1,6 +1,6 @@
 <template lang="pug">
 .skills.p-mt-6
-  h3.p-text-center My skills
+  h3.p-text-center 🎯 My skills
   hr
 
   .p-grid
