@@ -73,6 +73,7 @@ export default class Contacts extends Vue {
   .p-treenode-children {
     .p-treenode:nth-child(2n + 1) {
       background: #fedcc857;
+      border-radius: 6px;
     }
 
     .p-treenode-content {
@@ -91,9 +92,7 @@ export default class Contacts extends Vue {
           padding: 10px;
           width: 100%;
           display: inline-block;
-          text-decoration: blink;
           font-weight: 800;
-          color: #fff;
           font-size: 18px;
         }
       }

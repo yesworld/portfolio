@@ -37,6 +37,11 @@ body {
     width: 60%;
     border-color: #ca293e;
   }
+
+  a {
+    text-decoration: blink;
+    color: var(--color-light);
+  }
 }
 
 nav {
