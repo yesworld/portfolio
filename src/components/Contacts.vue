@@ -1,7 +1,7 @@
 <template lang="pug">
-.contacts.p-mt-6
-  h3.p-text-center I'm here because I love to work with interesting people. 😉
-  hr.p-my-3
+.contacts.p-mb-6
+  h3.p-text-center I'm here because I love to work with interesting people.
+  hr
 
   Tree(:value="nodes" @click="clickTree" :expandedKeys="expandedKeys" :loading="loading" @node-expand="onNodeExpand")
     template(#url="slotProps")
@@ -65,9 +65,22 @@ export default class Contacts extends Vue {
 
 <style lang="scss">
 .contacts {
+  > h3:after {
+    content: '😉';
+    display: inline-block;
+    margin-left: 15px;
+  }
+
   .p-tree {
     border: 1px solid #fedcc8;
     background: #573a4a;
+
+    > ul.p-tree-container > li > .p-treenode-content > .p-treenode-label {
+      width: calc(100% - 120px);
+      font-size: 20px;
+      text-align: center;
+      cursor: pointer;
+    }
   }
 
   .p-treenode-children {

@@ -1,6 +1,6 @@
 <template lang="pug">
-.skills.p-mt-6
-  h3.p-text-center 🎯 My skills
+.skills.p-mb-6
+  h3.p-text-center My skills
   hr
 
   .p-grid
@@ -61,7 +61,7 @@
         h4.p-my-2 {{score}} / {{average}}
 
   p * Frameworks: Phalcon, Symfony, Laravel, Yii, Zend
-  p ** Linux, Sphinx (search engine), Nginx, Apach, Git, Memcached, Redis
+  p ** Linux, Sphinx (search engine), Nginx, Apache, Git, Memcached, Redis, Docker, fail2Ban
 </template>
 
 <script lang="ts">
@@ -118,6 +118,12 @@ export default class Skills extends Vue {
 
 <style lang="scss">
 .skills {
+  > h3:after {
+    content: '🎯';
+    display: inline-block;
+    margin-left: 15px;
+  }
+
   .item {
     padding: 10px;
     align-items: center;
@@ -125,10 +131,10 @@ export default class Skills extends Vue {
     display: flex;
 
     &:nth-child(2n) {
-      background: #fedcc857;
+      background: var(--color-bg-dark);
     }
     &:nth-child(2n + 1) {
-      background: #fedcc833;
+      background: var(--color-bg-light);
     }
 
     label {

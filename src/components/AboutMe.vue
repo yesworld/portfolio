@@ -1,7 +1,7 @@
 <template lang="pug">
-.aboutme
-  h3.p-text-center ✏️ About Me
-  hr.p-my-3
+.aboutme.p-mb-6
+  h3.p-text-center About Me
+  hr
 
   p.description.p-text-center I am a full stack web-developer who has successful 10+ years of experience.
     |  Always passionate to use latest technologies for your projects,
@@ -22,4 +22,12 @@ import { Options, Vue } from 'vue-class-component'
 export default class AboutMe extends Vue {}
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+.aboutme {
+  > h3:after {
+    content: '✏️';
+    display: inline-block;
+    margin-left: 15px;
+  }
+}
+</style>

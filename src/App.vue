@@ -33,9 +33,15 @@ body {
     color: var(--text-color-h);
   }
 
+  h4 {
+    margin: 0;
+  }
+
   hr {
     width: 60%;
     border-color: #ca293e;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 
   a {

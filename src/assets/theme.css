@@ -18,6 +18,9 @@
   --color-light: #ff7f4a;
   --text-color-h: #ffeade;
 
+  --color-bg-light: #fedcc833;
+  --color-bg-dark: #fedcc857;
+
   --primary-color-text:#ffffff;
   --font-family:-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 }
