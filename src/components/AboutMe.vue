@@ -11,6 +11,9 @@
 
   p 📚 [RU] Wrote a simple article on habr.com 😅
   a(href="https://habr.com/post/433178" target="_blank" rel="nofollow noindex noopener") https://habr.com/post/433178
+
+  p 📦 I created a simple module for Nuxt.js:
+  a(href="https://www.npmjs.com/package/nuxt-feed-yandex-market" target="_blank" rel="nofollow noindex noopener") https://www.npmjs.com/package/nuxt-feed-yandex-market
 </template>
 
 <script lang="ts">

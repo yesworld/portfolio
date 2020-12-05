@@ -61,7 +61,7 @@
         h4.p-my-2 {{score}} / {{average}}
 
   p * Frameworks: Phalcon, Symfony, Laravel, Yii, Zend
-  p ** Linux, Sphinx (search engine), Nginx, Apache, Git, Memcached, Redis, Docker, fail2Ban
+  p ** Linux, Sphinx (search engine), Nginx, Apache, Git, Memcached, Redis, Docker, Fail2Ban, ImageMagick
 </template>
 
 <script lang="ts">
@@ -78,7 +78,7 @@ export default class Skills extends Vue {
   nodejs = 5
   mysql = 4
   mongo = 2
-  linux = 3
+  linux = 4
   js = 5
   nest = 3
   ts = 4

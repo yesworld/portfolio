@@ -51,7 +51,6 @@ export default class Contacts extends Vue {
       return
     }
 
-    console.log(1)
     this.loading = true
 
     setTimeout(() => {

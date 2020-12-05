@@ -6,6 +6,7 @@
 
   p.description.p-text-center My top priority is the quality of the final product, that's why I always keep the client posted on project status and discuss all possible issues that may occur in the future.
   br
+
   Portfolio
 </template>
 
