@@ -17,15 +17,16 @@
 
   .p-grid
     .p-col-12.p-md-6(v-for="(item, index) in list" :key="index")
-      Card
+      Card(@click="openDialog(item)" :class="{more: isLotOfDescription(item.text)}")
         template(#header)
-          img(:alt="item.title" :src="item.src")
+          div(style="height:160px; overflow: hidden;")
+            img(:alt="item.title" :src="item.src" )
 
         template(#title)
           h4 {{item.title}}
 
         template(#subtitle)
-          | {{item.subtitle}}
+          p(v-html="item.subtitle")
 
         template(#content)
           | {{getText(item.text)}}
@@ -34,9 +35,6 @@
         template(#footer)
           hr
           .p-tag.p-tag-rounded(v-for="tag in item.tags" :key="tag") {{tag}}
-
-  p 📦 also a plugin for WordPress:
-  p https://wordpress.org/plugins/images-optimize-and-upload-cf7
 </template>
 
 <script lang="ts">
@@ -66,6 +64,10 @@ export default class Portfolio extends Vue {
   }
 
   getText(text: string): string {
+    if (!this.isLotOfDescription(text)) {
+      return text
+    }
+
     const cutText = text.slice(0, this.length)
     const arrText = cutText.split(' ')
 
@@ -75,6 +77,10 @@ export default class Portfolio extends Vue {
   }
 
   openDialog(item: any): void {
+    if (!this.isLotOfDescription(item.text)) {
+      return
+    }
+
     this.dialogIsOpened = true
     this.dialog = { ...item }
   }
@@ -82,6 +88,10 @@ export default class Portfolio extends Vue {
   closeMaximizable() {
     this.dialogIsOpened = false
     this.dialog = { ...this.defaultDialog }
+  }
+
+  isLotOfDescription(text: string): boolean {
+    return text.length > this.length
   }
 
   get list() {
@@ -102,9 +112,18 @@ export default class Portfolio extends Vue {
     background: var(--color-bg-light);
     overflow: hidden;
 
+    .more,
+    &.more {
+      cursor: pointer;
+    }
+
     h4 {
       color: var(--primary-color-text);
       margin: 0;
+    }
+
+    .p-card-header img {
+      min-height: 160px;
     }
 
     .p-card-subtitle {
@@ -116,9 +135,6 @@ export default class Portfolio extends Vue {
     .p-card-footer,
     .p-card-content {
       padding: 0;
-    }
-    .more {
-      cursor: pointer;
     }
 
     .p-tag {
