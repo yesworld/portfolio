@@ -7,5 +7,15 @@ import './plugins/primevue'
 
 import '@/assets/global.css'
 
+// Plugins
+import VueDeferredContent from 'vue3-deferred-content'
+
 // @ts-ignore
-createApp(App).use(router).mount('#app')
+const app = createApp(App)
+
+app.use(VueDeferredContent, {
+  name: 'lazyContent',
+})
+app.use(router)
+
+app.mount('#app')

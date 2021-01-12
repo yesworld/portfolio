@@ -17,13 +17,13 @@ const PORTFOLIO = [
       'Created an online game which interacts with Steam items from https://steamcommunity.com. Set up protection from Dos-attack (multiple queries) and SQL-injections. Also, I created a two-factor authorization with Steam account, and created a bot that interacts with other Steam users for Steam items exchange. Web Sockets solve the synchronization problem between players. To animate the Wheels of Fortune, it was decided to use SVG Raphael.js',
   },
   {
-    src: '/img/portfolio/googleapi.png',
-    title: 'Mindsaw',
+    src: '/img/portfolio/vue3-plugin.png',
+    title: 'vue3-deferred-content',
     subtitle:
-      '<a href="https://mindsaw.com/" target="_blank" rel="nofollow noindex noopener">https://mindsaw.com/</a> full stack developer',
-    tags: ['PHP', 'Google Maps API', 'Marionette.js', 'WordPress', 'Gulp'],
+      '<a href="https://www.npmjs.com/package/vue3-deferred-content/" target="_blank" rel="nofollow noindex noopener">NPM vue3-deferred-content</a> for lazy loading content and image',
+    tags: ['TypeScript', 'Vue3', 'Rollup.js', 'IntersectionObserver', 'NPM'],
     text:
-      'I created websites for small businesses. I was using different technologies depending on the client needs. I was developing custom plugins for WordPress and integrating Authorize.NET payment gateway. Developed custom complex calculators on Backbone.js/Marionette.js. Integrated Sphinx search engine. Developed custom GPS routing web apps using Google Maps API',
+      'A Vue3 component to detect when lazy component or HTML element is becoming visible/hidden on the page. The intersection can be observed once or listened by callback.',
   },
   {
     src: '/img/portfolio/wp.png',
@@ -33,6 +33,15 @@ const PORTFOLIO = [
     tags: ['PHP', 'WordPress', 'AjaxUploader', 'Compression.js', 'Contact Form 7'],
     text:
       'Images Optimize and Upload CF7 is an extension plugin for Contact Form 7 plugin, that allows you to upload multiple images using drag-n-drop or simple “Browse” button, and compress them on the client’s side before sending it. If you want to save a user’s time and bandwidth on uploading large images, this plugin is perfect solution.',
+  },
+  {
+    src: '/img/portfolio/googleapi.png',
+    title: 'Mindsaw',
+    subtitle:
+      '<a href="https://mindsaw.com/" target="_blank" rel="nofollow noindex noopener">https://mindsaw.com/</a> full stack developer',
+    tags: ['PHP', 'Google Maps API', 'Marionette.js', 'WordPress', 'Gulp'],
+    text:
+      'I created websites for small businesses. I was using different technologies depending on the client needs. I was developing custom plugins for WordPress and integrating Authorize.NET payment gateway. Developed custom complex calculators on Backbone.js/Marionette.js. Integrated Sphinx search engine. Developed custom GPS routing web apps using Google Maps API',
   },
   {
     src: '/img/portfolio/realrating.png',

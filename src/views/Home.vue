@@ -7,13 +7,14 @@
   p.description.p-text-center My top priority is the quality of the final product, that's why I always keep the client posted on project status and discuss all possible issues that may occur in the future.
   br
 
-  IntersectedContent(targetScroll=".parallax")
+  lazy-content(:once="false")
     transition(name="fade")
       AsyncPortfolio
 
-  // div(style="height: 400px")
+  div(style="height: 400px")
+    h1 test2
 
-  IntersectedContent(targetScroll=".parallax")
+  // lazy-content(:once="true")
     transition(name="fade")
       AsyncDonate
 </template>
@@ -22,7 +23,6 @@
 import { Options, Vue } from 'vue-class-component'
 import { defineAsyncComponent } from 'vue'
 
-import IntersectedContent from '@/components/IntersectedContent.vue'
 import Contacts from '@/components/Contacts.vue'
 import AboutMe from '@/components/AboutMe.vue'
 import Skills from '@/components/Skills.vue'
@@ -31,7 +31,6 @@ import Skills from '@/components/Skills.vue'
   components: {
     AsyncPortfolio: defineAsyncComponent(() => import('@/components/Portfolio.vue')),
     AsyncDonate: defineAsyncComponent(() => import('@/components/Donate.vue' /* webpackChunkName: "donate" */)),
-    IntersectedContent,
     Contacts,
     AboutMe,
     Skills,
