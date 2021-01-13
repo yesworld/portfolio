@@ -11,10 +11,6 @@
       hr
       .p-tag.p-tag-rounded.p-m-1(v-for="tag in dialog.tags" :key="tag") {{tag}}
 
-      // template(#footer)
-        Button(label="No" icon="pi pi-times" @click="closeMaximizable" class="p-button-text")
-        Button(label="Yes" icon="pi pi-check" @click="closeMaximizable" autofocus)
-
   .p-grid
     .p-col-12.p-md-6(v-for="(item, index) in list" :key="index")
       Card(@click="openDialog(item)" :class="{more: isLotOfDescription(item.text)}")
@@ -34,7 +30,7 @@
 
         template(#footer)
           hr
-          .p-tag.p-tag-rounded(v-for="tag in item.tags" :key="tag") {{tag}}
+          Tag(v-for="tag in item.tags" :key="tag" :value="tag" rounded)
 </template>
 
 <script lang="ts">
@@ -43,12 +39,14 @@ import PORTFOLIO from '@/data/portfolio'
 import Dialog from 'primevue/dialog'
 import Button from 'primevue/button'
 import Card from 'primevue/card'
+import Tag from 'primevue/tag'
 
 @Options({
   components: {
     Button,
     Dialog,
     Card,
+    Tag,
   },
 })
 export default class Portfolio extends Vue {

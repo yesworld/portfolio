@@ -4,19 +4,19 @@
   Skills
   Contacts
 
-  p.description.p-text-center My top priority is the quality of the final product, that's why I always keep the client posted on project status and discuss all possible issues that may occur in the future.
-  br
-
-  lazy-content(:once="false")
+  lazy-content(:once="true" style="min-height: 400px;")
     transition(name="fade")
       AsyncPortfolio
 
-  div(style="height: 400px")
-    h1 test2
+  p.description.p-text-center My top priority is the quality of the final product, that's why I always keep the client posted on project status and discuss all possible issues that may occur in the future.
+  br
 
   // lazy-content(:once="true")
     transition(name="fade")
       AsyncDonate
+
+  // div(style="height: 400px")
+    h1 test2
 </template>
 
 <script lang="ts">

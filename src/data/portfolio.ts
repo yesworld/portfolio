@@ -12,7 +12,7 @@ const PORTFOLIO = [
     src: '/img/portfolio/d2bet.png',
     title: 'Wheels of Fortune',
     subtitle: 'Online game with Steam items from Dota 2 and Counter Strike.',
-    tags: ['PHP5.4', 'MySQL', 'Raphael.js', 'Websocket', 'Node.js', 'SteamApi'],
+    tags: ['PHP5.4', 'MySQL', 'Raphael.js', 'WebSocket', 'Node.js', 'SteamApi'],
     text:
       'Created an online game which interacts with Steam items from https://steamcommunity.com. Set up protection from Dos-attack (multiple queries) and SQL-injections. Also, I created a two-factor authorization with Steam account, and created a bot that interacts with other Steam users for Steam items exchange. Web Sockets solve the synchronization problem between players. To animate the Wheels of Fortune, it was decided to use SVG Raphael.js',
   },
@@ -20,10 +20,10 @@ const PORTFOLIO = [
     src: '/img/portfolio/vue3-plugin.png',
     title: 'vue3-deferred-content',
     subtitle:
-      '<a href="https://www.npmjs.com/package/vue3-deferred-content/" target="_blank" rel="nofollow noindex noopener">NPM vue3-deferred-content</a> for lazy loading content and image',
+      '<a href="https://www.npmjs.com/package/vue3-deferred-content/" target="_blank" rel="nofollow noindex noopener">NPM -> vue3-deferred-content</a><br>You need to see this <a href="https://yesworld.github.io/vue3-deferred-content/" target="_blank" rel="nofollow noindex noopener">Demo!</a>',
     tags: ['TypeScript', 'Vue3', 'Rollup.js', 'IntersectionObserver', 'NPM'],
     text:
-      'A Vue3 component to detect when lazy component or HTML element is becoming visible/hidden on the page. The intersection can be observed once or listened by callback.',
+      'A Vue3 component to detect when lazy component or HTML element is becoming visible/hidden on the page. The intersection can be observed once or listened by callback. MIT License',
   },
   {
     src: '/img/portfolio/wp.png',
