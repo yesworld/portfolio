@@ -1,24 +1,42 @@
-# portfolio on Vue3
+# Portfolio - yesworld.dev
 
-## Project setup
-```
-yarn install
-```
+[Site live demo](https://yesworld.github.io/portfolio/)
 
-### Compiles and hot-reloads for development
+## How to run?
 ```
-yarn serve
+$ yarn install
+$ yarn run serve
 ```
 
 ### Compiles and minifies for production
 ```
-yarn build
+yarn run build
 ```
 
-### Lints and fixes files
-```
-yarn lint
+### How I deployed the project on github?
+1. Create a file config `vue.config.js` with the following code:
+```javascript
+module.exports = {
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/portfolio/'
+    : '/'
+}
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+2. Installed `gh-pages`
+```javascript
+yarn add gh-pages -D
+```
+
+3. Added the script to the package `package.json`
+```javascript
+"scripts": {
+  "deploy": "gh-pages -d dist"
+}
+```
+
+## License
+
+[MIT License](./LICENSE)
+
+Copyright (c) @yesworld
