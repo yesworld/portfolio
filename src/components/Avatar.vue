@@ -10,7 +10,7 @@ import { Vue } from 'vue-class-component'
 
 export default class Avatar extends Vue {
   public data: any = {
-    avatar: '/img/me.png',
+    avatar: 'img/me.png',
     h1: "Hey! I'm Damir.",
     title: "I'll create a top-notch website for your big project!",
     rotate: ['business!', 'e-shop!', 'big project!'],

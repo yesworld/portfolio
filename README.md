@@ -1,5 +1,8 @@
 # Portfolio - yesworld.dev
 
+![](https://img.shields.io/npm/l/vue3-deferred-content?color=success&style=flat-square)
+[![](https://shields.io/badge/version-3.0-green?logo=Vue.js&style=flat-square)](https://v3.vuejs.org/)
+
 [Site live demo](https://yesworld.github.io/portfolio/)
 
 ## How to run?
@@ -39,4 +42,4 @@ yarn add gh-pages -D
 
 [MIT License](./LICENSE)
 
-Copyright (c) @yesworld
+Copyright (c) :suspect: @yesworld

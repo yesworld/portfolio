@@ -93,28 +93,28 @@ export default class Parallax extends Vue {
       display: block;
       position: absolute;
       bottom: 0;
-      background: url(/img/firewatch/layer_1.png) 50% 0;
+      background: url(~@/assets/firewatch/layer_1.png) 50% 0;
       height: 455px;
       width: 100%;
     }
 
     &.l_0 .image {
-      background-image: url(/img/firewatch/layer_0.png);
+      background-image: url(~@/assets/firewatch/layer_0.png);
     }
     &.l_2 .image {
-      background-image: url(/img/firewatch/layer_2.png);
+      background-image: url(~@/assets/firewatch/layer_2.png);
     }
     &.l_3 .image {
-      background-image: url(/img/firewatch/layer_3.png);
+      background-image: url(~@/assets/firewatch/layer_3.png);
     }
     &.l_4 .image {
-      background-image: url(/img/firewatch/layer_4.png);
+      background-image: url(~@/assets/firewatch/layer_4.png);
     }
     &.l_5 .image {
-      background-image: url(/img/firewatch/layer_5.png);
+      background-image: url(~@/assets/firewatch/layer_5.png);
     }
     &.l_6 .image {
-      background-image: url(/img/firewatch/layer_6.png);
+      background-image: url(~@/assets/firewatch/layer_6.png);
     }
   }
 
